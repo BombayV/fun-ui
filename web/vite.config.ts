@@ -1,18 +1,19 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [sveltekit()],
-	build: {
-		outDir: '../build',
-		emptyOutDir: false,
-		assetsDir: './',
-		rollupOptions: {
-			output: {
-				entryFileNames: '[name].js',
-				chunkFileNames: '[name].js',
-				assetFileNames: 'assets/[name].[ext]'
-			}
-		}
-	}
-});
+  plugins: [svelte()],
+  build: {
+    outDir: '../build',
+    emptyOutDir: false,
+    assetsDir: './',
+    rollupOptions: {
+      output: {
+        entryFileNames: '[name].js',
+        chunkFileNames: '[name].js',
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
+  }
+})
