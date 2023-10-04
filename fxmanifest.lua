@@ -16,5 +16,6 @@ files {
   'html/**/*'
 }
 
-client_script 'build/client.js'
-server_script 'build/server.js'
+client_scripts {
+  'client/*.lua'
+}
