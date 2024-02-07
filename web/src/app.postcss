@@ -1,0 +1,59 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+
+@layer base {
+  :root {
+    --text: #020a00;
+    --background: #f0f0f0;
+    --primary: #5ea419;
+    --primary-light: #a1e65b;
+    --secondary: #152900;
+    --accent: #A2EDB1;
+  }
+  .dark {
+    --text: #f7fff5;
+    --background: #0f0f0f;
+    --primary: #a1e65b;
+    --primary-light: #5ea419;
+    --secondary: #ebffd6;
+    --accent: #A2EDB1;
+  }
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans Variable', sans-serif;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@tailwind components;
+@tailwind utilities;
